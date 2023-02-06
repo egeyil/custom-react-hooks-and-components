@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div
-      className="bg-gradient-to-br from-cyan-700 to-slate-900 flex flex-row text-slate-50 h-screen overflow-y-hidden">
+      className="bg-gradient-to-br from-cyan-700 to-slate-900 flex flex-row text-slate-50 h-screen overflow-y-hidden transition-all duration-500">
       <Sidebar titles={Object.keys(components)} selectedComponent={selectedComponent} setSelectedComponent={setSelectedComponent}/>
       <ComponentDisplay title={selectedComponent}>
         {components[selectedComponent]}
